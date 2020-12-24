@@ -1,0 +1,3 @@
+include ':ninepiclibrary'
+include ':app'
+rootProject.name = "NinePicProject"
