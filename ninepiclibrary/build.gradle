@@ -46,3 +46,9 @@ publish {
     desc = 'nine picture add or delete or only show'            //描述
     website = 'https://github.com/llayjun/NinePicViewGroup'   //开源项目网址
 }
+
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    options.encoding = "UTF-8"
+}
